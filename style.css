@@ -165,6 +165,7 @@ nav {
     outline: none;
     border: none;
     font-size: 1.3rem;
+    border-bottom: 2px solid black;
 }
 
 .header__container input::placeholder {
@@ -174,6 +175,8 @@ nav {
 .header__container .btn {
     padding: 15px;
     font-size: 1.5rem;
+    background: none;
+    border: 1px solid black;
 }
 
 .header__container img {
@@ -181,3 +184,30 @@ nav {
     margin-inline: auto;
     filter: drop-shadow(5px 20px 20px rgba(0, 0, 0, 0.5));
 }
+
+.header__container::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50%;
+    background-color: var(--primary-color);
+    transform: translateY(50%) skewY(-5deg);
+    z-index: -1;
+}
+
+.scroll__down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    padding: 8px 5px;
+    color: var(--text-black);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    border: 8px solid var(--text-white);
+}
+
+/*! SECTION */
