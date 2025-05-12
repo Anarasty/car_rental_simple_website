@@ -59,6 +59,24 @@ nav {
     width: 100%;
     z-index: 5;
 }
+
+.btn {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: var(--text-dark);
+    background-color: var(--primary-color);
+  }
+
 /*! HEADER + NAV  */
 .nav__main {
     padding: 1rem;
@@ -175,12 +193,10 @@ nav {
 .header__container .btn {
     padding: 15px;
     font-size: 1.5rem;
-    background: none;
-    border: 1px solid black;
 }
 
 .header__container img {
-    max-width: 400px;
+    max-width: 700px;
     margin-inline: auto;
     filter: drop-shadow(5px 20px 20px rgba(0, 0, 0, 0.5));
 }
@@ -211,3 +227,82 @@ nav {
 }
 
 /*! SECTION */
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-black);
+    line-height: 4.5rem;
+}
+
+.range__container .section__header {
+    max-width: 700px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.range__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.range__card {
+    position: relative;
+    isolation: isolate;
+    max-width: 600px;
+    margin-inline: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.range__card img {
+    transition: 0.3s;
+}
+
+.range__card:hover img {
+    transform: scale(1.1);
+}
+
+.range__card__info {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(0, 0, 0, 0.75)
+      );
+}
+
+.range__card__info h4 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--text-white);
+    font-family: var(--additional-font);
+}
+
+.range__card__info a {
+    display: inline-block;
+    padding: 0px 4px;
+    font-size: 2rem;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+    border-radius: 100%;
+}
+
+.range__card__info a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
