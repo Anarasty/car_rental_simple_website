@@ -1,114 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Auto Via</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav__main">
-                <div class="nav__logo">
-                    <a href="#"><span>Auto</span> Via</a>
-                </div>
-                <div class="nav__menu__btn" id="nav__menu__btn">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </div>
-            <ul class="nav__links" id="nav__links">
-                <li><a href="home">Home</a></li>
-                <li><a href="rent">Rent</a></li>
-                <li><a href="test-drive">Test Drive</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-            <div class="nav__btn">
-                <button class="btn">Get Started</button>
-            </div>
-        </nav>
-
-        <div class="header__container" id="header__container">
-            <h1><span>LUXURY</span> CAR RENTAL</h1>
-            <form action="/">
-                <div class="input__group">
-                    <label for="location">Pick up your location</label>
-                    <input type="text" name="location" id="location" placeholder="Kyiv, Ukraine">
-                </div>
-                <div class="input__group">
-                    <label for="start">Start</label>
-                    <input type="text" name="start" id="start" placeholder="May 10, 10:00 AM">
-                </div>
-                <div class="input__group">
-                    <label for="stop">Stop</label>
-                    <input type="text" name="stop" id="stop" placeholder="May 15, 6:00 PM">
-                </div>
-                <button class="btn">
-                    <i class="ri-search-line"></i>
-                </button>
-            </form>
-            <img src="./img/car_3.png" alt="car-image">
+      <nav>
+        <div class="nav__main">
+          <div class="nav__logo">
+            <a href="#"><span>Auto</span> Via</a>
+          </div>
+          <div class="nav__menu__btn" id="nav__menu__btn">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
-        <a href="#about" class="scroll__down">
-            <i class="ri-arrow-down-circle-line"></i>
-        </a>
+        <ul class="nav__links" id="nav__links">
+          <li><a href="home">Home</a></li>
+          <li><a href="rent">Rent</a></li>
+          <li><a href="test-drive">Test Drive</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <button class="btn">Get Started</button>
+        </div>
+      </nav>
+
+      <div class="header__container" id="header__container">
+        <h1><span>LUXURY</span> CAR RENTAL</h1>
+        <form action="/">
+          <div class="input__group">
+            <label for="location">Pick up your location</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Kyiv, Ukraine"
+            />
+          </div>
+          <div class="input__group">
+            <label for="start">Start</label>
+            <input
+              type="text"
+              name="start"
+              id="start"
+              placeholder="May 10, 10:00 AM"
+            />
+          </div>
+          <div class="input__group">
+            <label for="stop">Stop</label>
+            <input
+              type="text"
+              name="stop"
+              id="stop"
+              placeholder="May 15, 6:00 PM"
+            />
+          </div>
+          <button class="btn">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <img src="./img/car_3.png" alt="car-image" />
+      </div>
+      <a href="#about" class="scroll__down">
+        <i class="ri-arrow-down-circle-line"></i>
+      </a>
     </header>
 
     <section class="section__container range__container" id="range__container">
-        <h2 class="section__header">PICK UP <span>YOUR</span> CAR</h2>
-        <div class="range__grid">
-            <div class="range__card">
-                <img src="./img/range_car1.jpg" alt="car_1">
-                <div class="range__card__info">
-                    <h4>SPORTS</h4>
-                    <a href="#"><i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
-
-            <div class="range__card">
-                <img src="./img/range_car2.jpg" alt="car_1">
-                <div class="range__card__info">
-                    <h4>SUVS</h4>
-                    <a href="#"><i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
-
-            <div class="range__card">
-                <img src="./img/range_car3.jpg" alt="car_1">
-                <div class="range__card__info">
-                    <h4>VANS</h4>
-                    <a href="#"><i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
-
-            <div class="range__card">
-                <img src="./img/range_car4.jpg" alt="car_1">
-                <div class="range__card__info">
-                    <h4>ELECTRIC</h4>
-                    <a href="#"><i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
+      <h2 class="section__header">PICK UP <span>YOUR</span> CAR</h2>
+      <div class="range__grid">
+        <div class="range__card">
+          <img src="./img/range_car1.jpg" alt="car_1" />
+          <div class="range__card__info">
+            <h4>SPORTS</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
         </div>
+
+        <div class="range__card">
+          <img src="./img/range_car2.jpg" alt="car_1" />
+          <div class="range__card__info">
+            <h4>SUVS</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="range__card">
+          <img src="./img/range_car3.jpg" alt="car_1" />
+          <div class="range__card__info">
+            <h4>VANS</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="range__card">
+          <img src="./img/range_car4.jpg" alt="car_1" />
+          <div class="range__card__info">
+            <h4>ELECTRIC</h4>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section__container location__container">
-        <div class="location__image">
-            <img src="./img/maps1.png" alt="location__img">
+      <div class="location__image">
+        <img src="./img/maps1.png" alt="location__img" />
+      </div>
+      <div class="location__info">
+        <h2 class="section__header">
+          FIND <span>AUTO VIA</span> ON GOOGLE MAPS
+        </h2>
+        <p>
+          Explore a wide selection of vehicles perfectly suited to your
+          lifestyle and travel plans. With our “Find us on google maps” feature,
+          you can quickly browse and book from a premium fleet available nearby.
+          Whether you need a stylish sedan for city driving, a powerful SUV for
+          family trips, or an eco-friendly electric car — we’ve got you covered.
+          Just enter your location, and we’ll match you with the best options
+          ready for immediate rental.
+        </p>
+        <div class="location__btn">
+          <button class="btn">Pick a Location</button>
         </div>
-        <div class="location__info">
-            <h2 class="section__header">FIND <span>AUTO VIA</span> ON GOOGLE MAPS</h2>
-            <p>Explore a wide selection of vehicles perfectly suited to your lifestyle and travel plans. With our “Find us on google maps” feature, you can quickly browse and book from a premium fleet available nearby. Whether you need a stylish sedan for city driving, a powerful SUV for family trips, or an eco-friendly electric car — we’ve got you covered. Just enter your location, and we’ll match you with the best options ready for immediate rental.</p>
-            <div class="location__btn">
-                <button class="btn">Pick a Location</button>
-            </div>
-        </div>
+      </div>
     </section>
 
-
+    <section class="select__container" id="ride">
+      <h2 class="section__header">CHOOSE YOUR <span>LUXURY</span> CAR</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="select__card">
+              <img src="./img/test00.png" alt="car1" />
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-speed-up-line"></i></span>
+                  <h4>290 <span>km/h</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-settings-5-line"></i></span>
+                  <h4>9 <span>speed</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-roadster-line"></i></span>
+                  <h4>2 <span>seats</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-signpost-line"></i></span>
+                  <h4>15 <span>milage</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <img src="./img/test01.png" alt="car2" />
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-speed-up-line"></i></span>
+                  <h4>220 <span>km/h</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-settings-5-line"></i></span>
+                  <h4>5 <span>speed</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-roadster-line"></i></span>
+                  <h4>4 <span>seats</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-signpost-line"></i></span>
+                  <h4>16 <span>milage</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <img src="./img/test02.png" alt="car3" />
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-speed-up-line"></i></span>
+                  <h4>210 <span>km/h</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-settings-5-line"></i></span>
+                  <h4>4 <span>speed</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-roadster-line"></i></span>
+                  <h4>4 <span>seats</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-signpost-line"></i></span>
+                  <h4>14 <span>milage</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <img src="./img/test03.png" alt="car4" />
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-speed-up-line"></i></span>
+                  <h4>320 <span>km/h</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-settings-5-line"></i></span>
+                  <h4>9 <span>speed</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-roadster-line"></i></span>
+                  <h4>2 <span>seats</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-signpost-line"></i></span>
+                  <h4>10 <span>milage</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="select__card">
+              <img src="./img/test04.png" alt="car5" />
+              <div class="select__info">
+                <div class="select__info__card">
+                  <span><i class="ri-speed-up-line"></i></span>
+                  <h4>260 <span>km/h</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-settings-5-line"></i></span>
+                  <h4>7 <span>speed</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-roadster-line"></i></span>
+                  <h4>4 <span>seats</span></h4>
+                </div>
+                <div class="select__info__card">
+                  <span><i class="ri-signpost-line"></i></span>
+                  <h4>10 <span>milage</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="/" class="select__form">
+        <div class="select__price">
+          <span><i class="ri-price-tag-3-line"></i></span>
+          <div><span id="select-price">230</span> /day</div>
+        </div>
+        <div class="select__btns">
+          <button class="btn">View Details</button>
+          <button class="btn">Rent Now</button>
+        </div>
+      </form>
+    </section>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
