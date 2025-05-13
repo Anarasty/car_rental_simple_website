@@ -6,7 +6,7 @@
   --primary-color-darker: #197c34;
   --text-black: #15191d;
   --text-gray: #737373;
-  --text-light: #e5e5e5;
+  --text-light: #d3d3d3;
   --text-white: #ffffff;
   /* --max-width: 1200px; */
   --additional-font: "Aldrich", sans-serif;
@@ -305,4 +305,44 @@ nav {
 .range__card__info a:hover {
     color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+/*! LOCATION SECTION  */
+.location__container {
+    display: grid;
+    gap: 2rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.location__image img {
+    max-width: 500px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    border-radius: 2rem;
+}
+
+.location__info .section__header{
+    margin-bottom: 2rem;
+}
+/* .location__info h2 {
+    font-size: 2.3rem;
+} */
+
+.location__info p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: rgb(98, 98, 98);
+    text-align: justify;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397); */
+}
+
+.location__btn .btn{
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.location__btn .btn:hover {
+    background-color: transparent;
+    box-shadow: 0 0 20px var(--primary-color);
 }

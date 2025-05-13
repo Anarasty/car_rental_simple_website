@@ -28,3 +28,28 @@ ScrollReveal().reveal(".header__container img", {
     ...scrollRevealOption,
     delay: 1000,
 })
+
+ScrollReveal().reveal(".range__card", {
+    duration: 1000,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".location__image img", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".location__info .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".location__info p", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".location__info .location__btn", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
