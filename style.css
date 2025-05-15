@@ -751,6 +751,7 @@ input {
 .news_container {
   padding-bottom: 0;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -760,7 +761,7 @@ input {
   font-weight: 400;
   /* letter-spacing: -2px; */
   color: var(--text-white);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .news_container form {
@@ -791,4 +792,65 @@ input {
 
 .news_container .btn:hover {
   background-color: var(--text-white);
+}
+
+/*! FOOTER */
+footer {
+  background-color: var(--text-black);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem 2rem;
+  border-bottom: 1px solid var(--text-light);
+}
+
+.footer__col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-white);
+}
+
+.footer__links {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__links a {
+  color: var(--text-white);
+  font-weight: 300;
+}
+
+.footer__links a:hover {
+  color: var(--text-gray);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--text-white);
+}
+
+.footer__socials a {
+  color: var(--text-white);
+  border-radius: 0.7rem;
+  padding: 8px;
+  font-size: 1.3rem;
+  border: 2px solid var(--text-white);
+}
+
+.footer__socials a:hover {
+  color: var(--text-gray);
+  border-color: var(--text-gray);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-align: center;
 }
