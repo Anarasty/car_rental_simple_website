@@ -854,3 +854,276 @@ footer {
   color: var(--text-light);
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+
+  .header__container h1 {
+    /* font-size: 3.5rem; */
+  }
+
+  .header__container form {
+    /* max-width: 500px; */
+  }
+
+  .location__container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 4rem;
+  }
+  
+  .location__info .section__header {
+    text-align: center;
+  }
+
+  .location__info p {
+    margin-inline: 4rem;
+  }
+
+  .location__btn {
+    /* margin-inline: ; */
+    /* align-self: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .story__grid {
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-content: center;
+    align-items: center;
+    margin-inline: auto; */
+  }
+
+  .story__card {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header__container h1 {
+    font-size: 4rem;
+  }
+
+  .header__container input {
+    font-size: 1rem;
+  }
+
+  .header__container input::placeholder {
+    font-size: 0.9rem;
+  }
+  
+  .select__card img {
+    max-width: 600px;
+  }
+
+  .select__info__card > span {
+    font-size: 1.5rem;
+    padding: 10px 12px;
+  }
+
+  .select__info__card h4 {
+    font-size: 1rem;
+  }
+  
+  .select__info__card h4 span  {
+    font-size: 1rem;
+  }
+
+  .select__form  {
+    max-width: 500px;
+  }
+
+  .story__card {
+    width: 60%;
+  }
+
+  /* .story__date {
+    width: 100%;
+  } */
+
+  .download__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .download__content {
+    padding-block: 2rem;
+  }
+
+  .download__content .section__header {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .download__links img {
+    max-width: 150px;
+  }
+
+  .download__image {
+    max-width: 400px;
+    margin-bottom: 1rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-inline: auto;
+  }
+
+  .download__image img {
+    border-radius: 0.5rem;
+  }
+
+  .news_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news_container .section__header {
+    margin-inline: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header__container h1 {
+    /* max-width: 600px; */
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .header__container form {
+    max-width: 500px;
+  }
+
+  .section__container  {
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+  }
+
+  .range__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .location__info p {
+    margin-inline: 1rem;
+  }
+
+  .select__form  {
+    max-width: 460px;
+  }
+
+  .story__card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__container h1,
+  .range__container .section__header,
+  .location__info .section__header,
+  .select__container .section__header,
+  .story__container .section__header,
+  .download__content .section__header,
+  .news_container .section__header 
+   {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+
+  /* .range__container .section__header {
+    font-size: 2.5rem;
+    font-weight: 600;
+  } */
+  
+  .range__card__info h4 {
+    font-size: 2rem;
+  }
+
+  .range__card__info a {
+    padding: 0px 3px;
+    font-size: 1.5rem;
+  }
+
+  .location__image img {
+    max-width: 400px;
+    border-radius: 1rem;
+  }
+/* 
+  .location__info .section__header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+  } */
+
+  .select__container {
+    padding-top: 2rem;
+  margin-bottom: 2rem;
+  }
+
+  .swiper-slide {
+    max-width: 500px;
+  }
+
+  .select__card img {
+    max-width: 420px;
+  }
+
+  .select__info {
+    max-width: 400px;
+  }
+
+  .select__info__card > span {
+    font-size: 1.2rem;
+    padding: 5px 6px;
+  }
+
+  .select__info__card h4 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .select__form  {
+    max-width: 350px;
+    gap: 1rem;
+  }
+
+  .select__price {
+    gap: 1rem;
+  }
+
+  .select__price span {
+    font-size: 2rem;
+  }
+
+  .story__card {
+    width: 90%;
+  }
+
+  .banner__wrapper {
+    gap: 4rem;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 1rem));
+    }
+  }
+
+  .download {
+    padding-inline: 0.5rem;
+  }
+
+  /* .download::before {
+    height: auto;
+  } */
+
+  .download__container {
+    padding: 0 0.5rem;
+  }
+}
