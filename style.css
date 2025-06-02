@@ -856,13 +856,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-  .header__container h1 {
-    /* font-size: 3.5rem; */
-  }
-
-  .header__container form {
-    /* max-width: 500px; */
-  }
 
   .location__container {
     grid-template-columns: repeat(1, 1fr);
