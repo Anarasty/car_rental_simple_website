@@ -679,7 +679,7 @@ input {
 }
 .download::before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   width: 100%;
@@ -713,7 +713,7 @@ input {
   justify-content: space-around; 
   gap: 1rem; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding-inline: 2rem;
   /* background-color: #15191d; */
@@ -722,10 +722,10 @@ input {
 .download__links img {
   /* max-width: 150px;
   margin-inline: 3rem; */
-  width: 100%;            
-  height: auto;           
-  max-width: 180px;       
-  justify-self: center;   
+  width: 100%;
+  height: auto;
+  max-width: 180px;
+  justify-self: center;
 }
 
 .download__image {
@@ -856,7 +856,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-
   .header__container h1 {
     /* font-size: 3.5rem; */
   }
@@ -869,7 +868,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem 4rem;
   }
-  
+
   .location__info .section__header {
     text-align: center;
   }
@@ -911,7 +910,7 @@ footer {
   .header__container input::placeholder {
     font-size: 0.9rem;
   }
-  
+
   .select__card img {
     max-width: 600px;
   }
@@ -924,12 +923,12 @@ footer {
   .select__info__card h4 {
     font-size: 1rem;
   }
-  
-  .select__info__card h4 span  {
+
+  .select__info__card h4 span {
     font-size: 1rem;
   }
 
-  .select__form  {
+  .select__form {
     max-width: 500px;
   }
 
@@ -995,10 +994,10 @@ footer {
     max-width: 500px;
   }
 
-  .section__container  {
+  .section__container {
     padding: 5rem 1rem;
   }
-  
+
   .section__header {
     font-size: 2.7rem;
     line-height: 3.5rem;
@@ -1013,7 +1012,7 @@ footer {
     margin-inline: 1rem;
   }
 
-  .select__form  {
+  .select__form {
     max-width: 460px;
   }
 
@@ -1029,8 +1028,7 @@ footer {
   .select__container .section__header,
   .story__container .section__header,
   .download__content .section__header,
-  .news_container .section__header 
-   {
+  .news_container .section__header {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 2.5rem;
@@ -1040,7 +1038,7 @@ footer {
     font-size: 2.5rem;
     font-weight: 600;
   } */
-  
+
   .range__card__info h4 {
     font-size: 2rem;
   }
@@ -1054,7 +1052,7 @@ footer {
     max-width: 400px;
     border-radius: 1rem;
   }
-/* 
+  /* 
   .location__info .section__header {
     font-size: 2.5rem;
     font-weight: 600;
@@ -1063,7 +1061,7 @@ footer {
 
   .select__container {
     padding-top: 2rem;
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   .swiper-slide {
@@ -1088,7 +1086,7 @@ footer {
     font-weight: 300;
   }
 
-  .select__form  {
+  .select__form {
     max-width: 350px;
     gap: 1rem;
   }
